@@ -1,0 +1,146 @@
+@import url('https://fonts.google.com/specimen/Josefin+Sans');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Josefin Sans;
+}
+.container {
+    margin: 20px 0;
+}
+.container2 {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    box-shadow: 0 15px 15px rgba(0,153,255,.05);
+}
+.box1 {
+    background: url(../img/bg-pattern-desktop.svg) no-repeat;
+    flex: 60%;
+    max-width: 60%;
+}
+.box2 {
+    flex: 40%;
+    max-width: 40%;
+}
+.a0 {
+    display: none;
+}
+.abcd {
+    width: 70%;
+    margin: auto;
+    padding: 40px 0;
+}
+.b {
+    width: 50%;
+    line-height: 2.5rem;
+    padding-bottom: 20px;
+    letter-spacing: 0.6rem;
+}
+.span {
+    color: hsl(0, 36%, 70%);
+}
+.c {
+    color: hsl(0, 36%, 70%);
+    line-height: 2rem;
+    padding-bottom: 40px;
+}
+.a {
+    padding-bottom: 70px;
+}
+.form {
+    position: relative;
+    display: inline-flex;
+    width: 90%;
+}
+button[name="submit"] {
+    position: absolute;
+    top: 0px;
+    right: -3px;
+    padding: 10px 0;
+    width: 20%;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    background-color: hsl(0, 93%, 68%);
+    color: white;
+}
+input.search-box {
+    width: 90%;
+    font-family: FontAwesome;
+    padding: 13px 30px;
+    border: 1px solid rgb(180, 179, 179);
+    outline: none;
+    border-radius: 30px;
+}
+@media (max-width: 1125px) {
+    .container2 {
+        width: 90%;
+    }
+}
+@media (max-width: 992px) {
+    .container2 {
+        width: 98%;
+    }
+}
+@media (max-width: 920px) {
+    .container2 {
+        width: 80%;
+    }
+    .a0 {
+        display: block;
+    }
+    .box1 {
+        flex: 100%;
+        max-width: 100%;
+    }
+    .box2 {
+        display: none;
+    }
+    .abcd {
+        width: 100%;
+    }
+    .a, .a0, .form {
+        padding-bottom: 40px;
+    }
+    .b {
+        width: 45%;
+        margin: auto;
+        padding-top: 30px;
+    }
+    .a, .c, .form {
+        width: 70%;
+        margin: auto;
+    }
+    .b, .c, .form {
+        text-align: center;
+    }
+    .form {
+        margin-left: 15%;
+    }
+}
+@media (max-width: 555px) {
+    .container2 {
+        width: 90%;
+    }
+}
+@media (max-width: 490px) {
+    .a, .c, .form {
+        width: 80%;
+    }
+    .form {
+        margin-left: 10%;
+    }
+    .b {
+        width: 75%;
+    }
+}
+@media (max-width: 385px) {
+    .container2 {
+        width: 100%;
+    }
+}
